@@ -114,8 +114,8 @@ a:visited, a:link, a:active{
 }
 
 .introduction{
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .grid-container > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
