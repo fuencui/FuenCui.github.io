@@ -80,44 +80,38 @@ a:visited, a:link, a:active{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
-    z-index: 99;
-    background-image:url("/image/image2.jpeg");
-    background-size: contain;
-    background-repeat: repeat-y;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-gap: 5px;
     width: 100%;
     height: auto;
+    background-color: rgb(177, 177, 177);
+    grid-template-areas: 
+    "header header"
+    "project1 image1"
+    "project2 image2"
+    "project3 image3"
+    "footer footer"
+    ;
 }
 
 .grid-container > div{
     display: flex;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    background-color: rgb(86, 86, 86);
+    border: 1px black solid;
+    justify-content: center;
     align-items: center;
+    
 }
 
-#fuenImage{
-    height: 100%;
-    object-fit: contain;
-}
-
-.grid-container div:first-of-type{
-    width: auto;
+.header{
     height: 200px;
+    grid-area: header;
+    
 }
 
-.introduction{
-    margin-left: 8%;
-    margin-right: 8%;
-    font-size: large;
-    font-weight: bolder;
-    color: rgb(109, 37, 37);
+.footer{
+    grid-area: footer;
 }
 
-.grid-container > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
-    height: 200px;
-}
+

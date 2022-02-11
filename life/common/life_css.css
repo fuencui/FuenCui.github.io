@@ -78,46 +78,9 @@ a:visited, a:link, a:active{
     object-fit: contain;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
-    z-index: 99;
-    background-image:url("/image/image2.jpeg");
-    background-size: contain;
-    background-repeat: repeat-y;
+.video > iframe{
     width: 100%;
-    height: auto;
+    height: 720px;
 }
 
-.grid-container > div{
-    display: flex;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-#fuenImage{
-    height: 100%;
-    object-fit: contain;
-}
-
-.grid-container div:first-of-type{
-    width: auto;
-    height: 200px;
-}
-
-.introduction{
-    margin-left: 8%;
-    margin-right: 8%;
-    font-size: large;
-    font-weight: bolder;
-    color: rgb(109, 37, 37);
-}
-
-.grid-container > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
-    height: 200px;
-}
