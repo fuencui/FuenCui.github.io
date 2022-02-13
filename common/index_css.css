@@ -121,3 +121,14 @@ a:visited, a:link, a:active{
 .grid-container > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
     height: 200px;
 }
+
+
+@media(max-width: 800px) {
+    .introduction{
+        margin-left: 8%;
+        margin-right: 8%;
+        font-size: large;
+        font-weight: bolder;
+        color: rgb(250, 234, 91);
+    }
+  }
