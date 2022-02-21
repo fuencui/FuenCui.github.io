@@ -79,85 +79,52 @@ a:visited, a:link, a:active{
     object-fit: contain;
 }
 
-.container{
+.info{
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 10px;
+    width: 100%;
+    height: 100px;
     background-color: #fefae0;
+    justify-content: center;
+    align-items: center;
 }
 
-.headBox{
-    position: relative;
+.container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    background-color: #fefae0;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.headBox > div{
-    position: relative;
-    width: 50%;
-    object-fit: contain;
-    text-align: center;
-    margin-top: 40px;
-
-}
-
-#cui{
     width: 100%;
-    object-fit: contain;
+    gap: 20px;
+    
 }
 
-.introduction{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 40px;
-}
-
-.introduction > div{
-    width: 50%;
-    height: auto;
+.icon{
+    margin: 8%;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
     text-align: center;
 }
 
-.school{
-    height: 50px;
-    width: auto;
-    float: left;
-}
-
-.gear{
-    height: auto;
-    width: 50px;
-    float: left;
+.icon:hover{
+    filter: brightness(110%);
+    color: #d4a373;
 }
 
 .toBeContinued{
-    height: 200px;
+    width: 100%;
+    height: 300px;
+    background-color: #fefae0;
 }
 
 @media(max-width: 800px) {
-    .introduction{
-        margin-left: 8%;
-        margin-right: 8%;
-        font-size: large;
-        font-weight: bolder;
+    .icon{
+        margin: 8%;
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        text-align: center;
     }
-
-    .NavBar{
-        height: auto;
-    }
-
-    .i{
-        align-items: center;
-        justify-content: center;
-    }
-  }
+}
