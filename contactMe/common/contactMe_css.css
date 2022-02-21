@@ -1,5 +1,6 @@
 *{
     margin: 0px;
+    padding: 0px;
 }
 
 a:visited, a:link, a:active{
@@ -81,6 +82,8 @@ a:visited, a:link, a:active{
 
 .info{
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 100%;
     height: 100px;
     background-color: #fefae0;
