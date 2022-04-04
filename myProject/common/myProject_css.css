@@ -94,13 +94,14 @@ a:visited, a:link, a:active{
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 4fr 4fr 6fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr 4fr 6fr 1fr;
     grid-gap: 5px;
     width: 100%;
     height: auto;
     background-color: #faedcd;
     grid-template-areas:
     "header"
+    "wordle"
     "project1"
     "project2"
     "project3"
@@ -124,6 +125,14 @@ a:visited, a:link, a:active{
 
 
 .project1 > img{
+    width: 560px;
+    height: 340;
+    object-fit:fill;
+    border: 5px black solid;
+    border-radius: 10%;
+}
+
+.wordle > img{
     width: 560px;
     height: 340;
     object-fit:fill;
@@ -154,6 +163,11 @@ a:visited, a:link, a:active{
 .header{
     height: 200px;
     grid-area: header;
+}
+
+
+.wordle{
+    grid-area: wordle;
 }
 
 .project1{
@@ -189,6 +203,14 @@ h3:hover{
     }
 
     .project1 > img{
+        width: auto;
+        height: 300px;
+        object-fit:fill;
+        border: 5px black solid;
+        border-radius: 10%;
+    }
+
+    .wordle > img {
         width: auto;
         height: 300px;
         object-fit:fill;
