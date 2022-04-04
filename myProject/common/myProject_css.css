@@ -123,6 +123,13 @@ a:visited, a:link, a:active{
     justify-content: center;
 }
 
+.wordle > img{
+    width: 560px;
+    height: 340;
+    object-fit:fill;
+    border: 5px black solid;
+    border-radius: 10%;
+}   
 
 .project1 > img{
     width: 560px;
@@ -132,13 +139,6 @@ a:visited, a:link, a:active{
     border-radius: 10%;
 }
 
-.wordle > img{
-    width: 560px;
-    height: 340;
-    object-fit:fill;
-    border: 5px black solid;
-    border-radius: 10%;
-}   
 
 .youtube{
     width: 560px;
